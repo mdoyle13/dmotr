@@ -1,6 +1,12 @@
-//= require turbolinks
+//= require jquery
+//= require_tree ./vendor
 
 $(function() {
+  
+  $(document).pjax('a', '#page-outlet', {
+    fragment: '.page-fragment'
+  })
+  
   $("a").hover(function(e) {
     console.log('hi')
     var randomClass = getRandomClass();

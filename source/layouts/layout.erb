@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <%= stylesheet_link_tag :site %>
+        <%= javascript_include_tag :app %>
         <link href='https://fonts.googleapis.com/css?family=Karla:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
     </head>
     <body>  
@@ -14,6 +15,7 @@
           <nav>
             <p id="dmotr">DMOTR</h1>
             <ul>
+              <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="#">Music</a></li>
               <li><a href="#">Shows</a></li>
@@ -26,14 +28,11 @@
             <a href="#"><span class="icon-bandcamp"></span></a>
             
           </nav>
-          <section class="content">
+          <section class="content" id="page-outlet">
             <%= yield %>
           </section>
         </section>
         <div id="background"></div>
         <img id="video" src="images/circles.gif">
-        <script src="https://code.jquery.com/jquery-1.12.2.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.2.min.js"><\/script>')</script>
-        <%= javascript_include_tag :all %>
     </body>
 </html>
