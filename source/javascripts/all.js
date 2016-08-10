@@ -1,3 +1,5 @@
+//= require turbolinks
+
 $(function() {
   $("a").hover(function(e) {
     console.log('hi')
