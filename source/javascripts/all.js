@@ -8,7 +8,7 @@ $(function() {
 
 function getRandomClass() {
     //Store available css classes
-    var classes = new Array("red", "orange", "yellow", "green", "blue", "indigo", "violet");
+    var classes = new Array("red", "orange", "yellow", "green", "RoyalBlue", "pink", "plum");
     var randomNumber = Math.floor(Math.random()*7);
     return classes[randomNumber];
 }
