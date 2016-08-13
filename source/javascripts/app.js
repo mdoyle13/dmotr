@@ -4,7 +4,8 @@
 $(function() {
   
   $(document).pjax('a', '#page-outlet', {
-    fragment: '.page-fragment'
+    fragment: '.page-fragment',
+    container: '#page-outlet'
   })
   
   $("a").hover(function(e) {
