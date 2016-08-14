@@ -1,1 +1,0 @@
-function getRandomClass(){var o=new Array("red","orange","yellow","green","blue","indigo","violet"),n=Math.floor(7*Math.random());return o[n]}$(function(){$("a").hover(function(o){console.log("hi");var n=getRandomClass();$(o.target).css("color",n)})});
