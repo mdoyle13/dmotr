@@ -112,17 +112,41 @@ h1,p {
 }
 
 
+.menu-ctrl {
+  visibility: hidden;
+  position: absolute;
+  font-size: 1.5em;
+  left: 0;
+}
+
+
+nav.expanded .menu-close {
+  visibility: visible;
+}
+
+nav.expanded .menu-open {
+  visibility: hidden;
+}
 //screen sizes below 768
 
 
-
 @media only screen and (max-width: 768px) {
+  .menu-ctrl.menu-open {
+    visibility: visible;
+  }
+  
   nav {
     position: fixed;
     width: 100%;
     height: 60px;
     overflow: hidden;
-    padding: 0;    
+    padding: 0;
+    transition: all 0.5s;
+    &.expanded {
+      background: black;
+      overflow: visible;
+      height: 100%;
+    }  
   }
 
   #dmotr {

@@ -6,12 +6,25 @@ $(function() {
   $(document).pjax('a', '#page-outlet', {
     fragment: '.page-fragment',
     container: '#page-outlet'
-  })
+  });
+  
+  $(document).on('pjax:success', function() {
+    $('nav').removeClass('expanded')
+  });
   
   $("a").hover(function(e) {
-    console.log('hi')
     var randomClass = getRandomClass();
     $(e.target).css("color", randomClass);
+  });
+  
+  $('.menu-open').click(function(e) {
+    e.preventDefault();
+    $('nav').addClass('expanded');
+  });
+  
+  $('.menu-close').click(function(e) {
+    e.preventDefault();
+    $('nav').removeClass('expanded');
   });
 });
 
