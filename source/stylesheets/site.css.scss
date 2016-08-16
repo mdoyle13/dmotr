@@ -78,6 +78,7 @@ a:visited {
   padding: 5%;
   background: rgba(0,0,0,0.75);
   min-height: 100%;
+  -webkit-overflow-scrolling: auto
 }
 
 h1 {
@@ -110,8 +111,8 @@ h1,p {
 }
 
 #logo {
-  display:block;
-  width: 100%;
+  display:inline-block;
+  width: 80%;
 }
 
 
@@ -134,6 +135,10 @@ nav.expanded .menu-open {
 
 
 @media only screen and (max-width: 768px) {
+  .menu-ctrl {
+    padding-top: 10px;
+  }
+  
   .menu-ctrl.menu-open {
     visibility: visible;
   }
@@ -144,7 +149,7 @@ nav.expanded .menu-open {
     height: 60px;
     overflow: hidden;
     padding: 0;
-    transition: all 0.5s;
+    transition: all 0.3s;
     &.expanded {
       background: black;
       overflow: visible;
@@ -156,7 +161,12 @@ nav.expanded .menu-open {
     width: 150px;
     margin: 0 auto;
     vertical-align: middle;
-    padding-top: 10px;  
+    padding-top: 10px;
+  }
+  
+  #logo {
+    width: 75%;
+    margin-top: 3px;
   }
   
   .content {
