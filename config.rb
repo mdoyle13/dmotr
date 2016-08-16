@@ -37,6 +37,7 @@ end
 # Build-specific configuration
 configure :build do
   activate :sprockets
+  activate :gzip
   activate :minify_css
   activate :minify_html
   activate :minify_javascript
