@@ -96,13 +96,13 @@ h1,p {
 }
 
 
-.videoWrapper {
+.video-wrapper {
 	position: relative;
 	padding-bottom: 56.25%; /* 16:9 */
 	padding-top: 25px;
 	height: 0;
 }
-.videoWrapper iframe {
+.video-wrapper iframe {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -176,4 +176,18 @@ nav.expanded .menu-open {
     min-height: 100%;
     margin-top: 60px;
   }
+}
+
+img {
+  max-width: 100%;
+}
+
+
+//grid
+.block-grid {
+  display: flex;
+}
+
+.grid-item {
+  flex: 1;
 }
