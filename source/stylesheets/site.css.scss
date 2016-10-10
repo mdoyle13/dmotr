@@ -185,9 +185,27 @@ img {
 
 //grid
 .block-grid {
+  box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .grid-item {
+  box-sizing: border-box;
   flex: 1;
+  flex-basis: 50%;
+  margin: 20px 0;
+  padding: 0 2%;
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  .block-grid {
+    display: block;
+  }
+  
+  .grid-item {
+    width: 100%;
+  }
 }
