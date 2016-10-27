@@ -149,6 +149,7 @@ nav.expanded .menu-open {
     overflow: hidden;
     padding: 0;
     transition: all 0.3s;
+    z-index: 9999;
     &.expanded {
       background: black;
       overflow: visible;
@@ -171,8 +172,6 @@ nav.expanded .menu-open {
   
   .content {
     margin-left: 0;
-    padding: 5%;
-    background: rgba(0, 0, 0, 0.75);
     min-height: 100%;
     margin-top: 60px;
   }
