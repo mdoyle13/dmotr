@@ -42,4 +42,5 @@ configure :build do
   activate :minify_html
   activate :minify_javascript
   activate :autoprefixer
+  activate :asset_hash
 end
