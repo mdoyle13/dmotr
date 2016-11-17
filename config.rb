@@ -41,6 +41,8 @@ configure :build do
   activate :minify_css
   activate :minify_html
   activate :minify_javascript
-  activate :autoprefixer
   activate :asset_hash
+  activate :autoprefixer do |config|
+    config.remove = false
+  end
 end
