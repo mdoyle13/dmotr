@@ -28,7 +28,11 @@ p {
   line-height: 1.45em;
 }
 
-h1,h2,p {
+li {
+  color: inherit;
+}
+
+h1,h2,p,li {
   color: rgba(255,255,255,0.8);
 }
 
