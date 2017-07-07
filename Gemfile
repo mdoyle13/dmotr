@@ -15,3 +15,4 @@ gem "middleman-sprockets"
 gem "middleman-minify-html"
 gem "jquery-rails", require: false
 gem 'middleman-autoprefixer'
+gem 'middleman-gh-pages'

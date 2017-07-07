@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title><%= current_page.data.title %></title>
+        <title><%= current_page.data.title %> | Drag Me Over The Rainbow | Austin, TX</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
         <%= stylesheet_link_tag :application %>
         <%= javascript_include_tag :app %>
         <link href='https://fonts.googleapis.com/css?family=Karla:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
     </head>
-    <body>  
+    <body>
         <section class="page">
           <nav>
             <a href="#" class="menu-ctrl menu-open"><span class="icon-menu"></span></a>
@@ -31,15 +31,15 @@
             <a href="http://dmotr.tumblr.com/" target="_blank"><span class="icon-tumblr-squared"></span></a>
             <a href="https://www.facebook.com/dragmeovertherainbow" target="_blank"><span class="icon-facebook-squared"></span></a>
             <a href="https://open.spotify.com/artist/0hOsFzl1mIfokitItCmbYY" target="_blank"><span class="icon-spotify"></span></a>
-            
-            
+
+
           </nav>
           <section class="content" id="page-outlet">
             <%= yield %>
           </section>
         </section> <!-- end page wrapper -->
         <img id="video" src="images/backgrounds/4_opt.gif">
-        
+
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
